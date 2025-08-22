@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"
+    />
+  <title>Quicklist — Compras da semana</title>
+</head>
+<body>
+  <div id="wrapper">
+    <header class="header">
+        <div class="header__cell">
+          <bold class="time">9:41</bold>  
+          <div class="cell">
+            <img src="assets/cell-signal-full-thin.svg" alt="icone sinal de celular" class="small-cell">
+            <img src="assets/wifi-high-thin.svg" alt="ícone wifi" class="small-cell">
+            <img src="assets/battery-full-fill.svg" alt="ícone bateria de celular" class="small-cell">
+          </div>
+      </div>
+      <div class="header__brand">
+        <img src="assets/Logo..svg" alt="Logo">
+        <span class="logo">quicklist</span>  
+      </div>
+      <div class="header__bar">
+        <a class="header__back" href="#">          
+          <span class="sr-only">← Voltar</span>
+        </a>       
+      </div>
+    </header>
+    <main class="page">
+      <section class="list">
+        <h1 class="list__title">Compras da semana</h1>       
+        <form class="list__form">          
+          <input
+            id="new-item"
+            name="item"
+            class="list__input"
+            type="text"
+            placeholder="Adicione um novo item"           
+            required
+          />
+          <button class="list__add" type="submit">Adicionar item</button>
+        </form>
+      
+        <ul class="items">          
+          <li class="item">
+            <label class="item__body">
+              <input class="item__check" type="checkbox" selected/>
+              <span class="item__text">Pão de forma</span>
+            </label>
+            <button class="item__remove" type="button" ><img src="assets/lixeira.svg" alt="ícone de lixeira" class="imgLixeira"></button>
+          </li>
+          <li class="item">
+            <label class="item__body">
+              <input class="item__check" type="checkbox"  />
+              <span class="item__text">Café preto</span>
+            </label>
+            <button class="item__remove" type="button" aria-label="Remover Café preto">🗑️</button>
+          </li>
+          <li class="item">
+            <label class="item__body">
+              <input class="item__check" type="checkbox" aria-label="Marcar Suco de laranja como concluído" />
+              <span class="item__text">Suco de laranja</span>
+            </label>
+            <button class="item__remove" type="button" aria-label="Remover Suco de laranja">🗑️</button>
+          </li>
+          <li class="item">
+            <label class="item__body">
+              <input class="item__check" type="checkbox" aria-label="Marcar Bolacha como concluído" />
+              <span class="item__text">Bolacha</span>
+            </label>
+            <button class="item__remove" type="button" aria-label="Remover Bolacha">🗑️</button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    
+    <div class="toast">         
+      <button class="toast__close" type="button">
+        <div id="lastButton">
+          <img src="assets/warning-circle-filled.svg" alt="ícone de exclamação">
+          <span>O item foi removido da lista</span>
+        </div>
+        <img src="assets/delete-small.svg" alt="ícone de fechar">
+      </button>
+    </div>
+ <script src=""></script>
+  </div>
+</body>
+</html>
