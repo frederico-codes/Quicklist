@@ -129,7 +129,6 @@ body{
   border: 2px solid var(--border-primary, #D1D5DB);
   background: var(--background-secondary, #FFF);
   margin-bottom: 16px; 
-  cursor: pointer;
 }
 
 #new-item:hover{ 
@@ -181,6 +180,18 @@ body{
   flex-direction: column;
   gap: 12px;
 }
+
+.toast[hidden] { display: none; }
+.toast { opacity: 0; transition: opacity .15s ease; }
+.toast.is-visible { opacity: 1; }
+
+
+.item__check {
+  accent-color: #CA3884;  
+  cursor: pointer;
+}
+
+
 
 
 
